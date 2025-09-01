@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #1e1e2f;
+  color: #e0e0e0;
+}
+
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+h1 {
+  color: #e3350d;
+}
+h2 {
+  color: #e3350d;
+  font-size: 1.8em;
+}
+h3 {
+  color: #e3350d;
+  font-size: 1.2em;
+}
+
+nav {
+  background: #2a2a3d;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #e3350d;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: #e3350d;
+  color: #1e1e2f;
+}
+
+.tab-content {
+  display: none;
+  padding: 3em 2em;
+}
+.tab-content.active {
+  display: block;
+}
+
+.eevee-banner {
+  background: url('images/eevee-banner.jpg') center/cover no-repeat;
+  height: 300px;
+  position: relative;
+  box-shadow: inset 0 -80px 80px rgba(0,0,0,0.5);
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 20px; 
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.welcome-heading {
+  text-align: center;
+  font-size: 2em;
+  margin: 1.5em 0;
+  color: #e3350d;
+  font-weight: 700;
+}
+
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  background: #2a2a3d;
+  border-radius: 20px;
+  padding: 2.5em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.trainer-card {
+  background: #1f1f30;
+  padding: 1em;
+  border-radius: 16px;
+  width: 260px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+.trainer-card:hover {
+  transform: scale(1.05);
+}
+
+.trainer-photo {
+  width: 90%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1em auto;
+  border: 4px solid #2a75bb;
+  border-radius: 8px;
+  object-fit: contain; 
+}
+
+.trainer-info h3 {
+  margin-top: -6px;
+  text-align: center; 
+  font-weight: bold; 
+}
+
+.appreciation {
+  flex: 1;
+  font-size: 1em;
+  background: #353552;
+  padding: 1.5em;
+  border-left: 6px solid #e3350d;
+  border-radius: 10px;
+  color: #f8f8f8;
+  line-height: 1.7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.poke-card {
+  background: #2a2a3d;
+  border-radius: 12px;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.poke-card:hover {
+  transform: scale(1.03);
+}
+.poke-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.poke-card h3 {
+  color: #e3350d;
+  font-size: 1.1em;
+  margin-top: 0.6em;
+}
+.poke-card p {
+  font-size: 0.9em;
+  color: #ccc;
+}
